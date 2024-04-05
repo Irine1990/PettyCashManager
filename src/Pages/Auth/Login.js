@@ -70,7 +70,7 @@ const Login = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    // await console.log(container);
+    await console.log(container);
   }, []);
 
   return (
@@ -143,7 +143,7 @@ const Login = () => {
       />
       <Container
         className="mt-5"
-        style={{ position: "relative", zIndex: "2 !important" }}
+        style={{ position: "relative", zIndex: "2 !important", backgroundColor:"black" }}
       >
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
@@ -151,9 +151,11 @@ const Login = () => {
               <AccountBalanceWalletIcon
                 sx={{ fontSize: 40, color: "white" }}
                 className="text-center"
+
               />
             </h1>
-            <h2 className="text-white text-center ">Login</h2>
+            <h2 className="text-center text-white">Welcome to Expense Management System</h2>
+            <h2 className="text-white text-center ">login</h2>
             <Form>
               <Form.Group controlId="formBasicEmail" className="mt-3">
                 <Form.Label className="text-white">Email address</Form.Label>
@@ -186,9 +188,9 @@ const Login = () => {
                 }}
                 className="mt-4"
               >
-                <Link to="/forgotPassword" className="text-white lnk">
+                {/* <Link to="/forgotPassword" className="text-blue lnk">
                   Forgot Password?
-                </Link>
+                </Link> */}
 
                 <Button
                   type="submit"
