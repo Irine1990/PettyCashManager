@@ -75,7 +75,7 @@ const Login = () => {
 
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -139,7 +139,7 @@ const Login = () => {
           left: 0,
           right: 0,
           bottom: 0,
-        }}
+        }} */}
       />
       <Container
         className="mt-5"
