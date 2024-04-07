@@ -156,7 +156,7 @@ const Register = () => {
             <h1 className="text-center">
               <AccountBalanceWalletIcon sx={{ fontSize: 40, color: "white" }} className="text-center" />
             </h1>
-            <h1 className="text-center text-white">Welcome to Expense Management System</h1>
+            <h1 className="text-center text-white">Welcome to PettyCash Manager</h1>
             <Col md={{ span: 6, offset: 3 }}>
               <h2 className="text-white text-center mt-5" >Registration</h2>
               <Form>
