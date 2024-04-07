@@ -22,10 +22,10 @@ const Register = () => {
     }
   }, [navigate]);
 
-  const particlesInit = useCallback(async (engine) => {
-    console.log(particlesInit);
-    await loadFull(engine);
-  }, []);
+  // const particlesInit = useCallback(async (engine) => {
+  //   console.log(particlesInit);
+  //   await loadFull(engine);
+  // }, []);
 
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
@@ -85,8 +85,8 @@ const Register = () => {
 
   return (
     <>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <Particles
+      <div style={{ position: 'relative', overflow: 'hidden',width:"100%", height: "950px", backgroundColor: "black",  }}>
+        {/* <Particles
           id="tsparticles"
 
           loaded={particlesLoaded}
@@ -151,9 +151,9 @@ const Register = () => {
             right: 0,
             bottom: 0,
           }}
-        />
+        /> */}
         
-        <Container className="mt-5" style={{ position: 'relative', zIndex: "2 !important", color: "white !important" }}>
+        <Container className="mt-5" style={{ position: 'relative', zIndex: "2 !important", color: "black !important" }}>
           <Row>
             <h1 className="text-center">
               <AccountBalanceWalletIcon sx={{ fontSize: 40, color: "white" }} className="text-center" />
@@ -176,7 +176,7 @@ const Register = () => {
                   <Form.Control type="password" name="password" placeholder="Password" value={values.password} onChange={handleChange} />
                 </Form.Group>
                 <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }} className="mt-4">
-                  <Link to="/forgotPassword" className="text-white lnk" >Forgot Password?</Link>
+                  <Link to="/forgotPassword" className="text-black lnk" >Forgot Password?</Link>
 
                   <Button
                     type="submit"
