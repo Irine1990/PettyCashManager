@@ -25,9 +25,9 @@ const Register = () => {
   //   await loadFull(engine);
   // }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+  // const particlesLoaded = useCallback(async (container) => {
+  //   await console.log(container);
+  // }, []);
 
   const [values, setValues] = useState({
     name: "",
@@ -76,14 +76,14 @@ const Register = () => {
       setLoading(false);
     }
   };
-  
- 
+
+
 
 
 
   return (
     <>
-      <div style={{ position: 'relative', overflow: 'hidden',width:"100%", height: "950px", backgroundColor: "black",  }}>
+      <div style={{ position: 'relative', overflow: 'hidden', width: "100%", height: "950px", backgroundColor: "black" }}>
         {/* <Particles
           id="tsparticles"
 
@@ -150,7 +150,7 @@ const Register = () => {
             bottom: 0,
           }}
         /> */}
-        
+
         <Container className="mt-5" style={{ position: 'relative', zIndex: "2 !important", color: "black !important" }}>
           <Row>
             <h1 className="text-center">
@@ -179,11 +179,19 @@ const Register = () => {
                   <Button
                     type="submit"
                     className=" text-center mt-3 btnStyle"
+                    onClick={handleSubmit}
+                    
+                  >Register
+                    {/* {loading ? "Registering..." : "Signup"} */}
+                  </Button>
+                  {/* <Button
+                    type="submit"
+                    className=" text-center mt-3 btnStyle"
                     onClick={!loading ? handleSubmit : null}
                     disabled={loading}
                   >
                     {loading ? "Registering..." : "Signup"}
-                  </Button>
+                  </Button> */}
 
                   <p className="mt-3" style={{ color: "#9d9494" }}>Already have an account? <Link to="/login" className="text-white lnk" >Login</Link></p>
 
@@ -192,7 +200,7 @@ const Register = () => {
             </Col>
           </Row>
           <ToastContainer />
-          
+
         </Container>
       </div>
     </>

@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect,  } from "react";
+
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,7 +9,7 @@ import "./avatar.css";
 import { Button } from "react-bootstrap";
 import { setAvatarAPI } from "../../utils/ApiRequest.js";
 import Particles from "react-tsparticles";
-
+// import { loadFull } from "tsparticles";
 
 // import Buffer from "buffer";
 const {
@@ -139,7 +140,7 @@ const SetAvatar = () => {
     <>
       <div style={{ position: "relative", overflow: "hidden" }}>
         <Particles
-          id="tsparticles"
+          // id="tsparticles"
           // init={particlesInit}
           // loaded={particlesLoaded}
           options={{

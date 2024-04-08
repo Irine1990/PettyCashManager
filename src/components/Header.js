@@ -33,22 +33,22 @@ const navigate = useNavigate();
     navigate("/login");
   }
 
-  const particlesInit = useCallback(async (engine) => {
-    // console.log(engine);
-    await loadFull(engine);
-  }, []);
+  // const particlesInit = useCallback(async (engine) => {
+  //   // console.log(engine);
+  //   await loadFull(engine);
+  // }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    // await console.log(container);
-  }, []);
+  // const particlesLoaded = useCallback(async (container) => {
+  //   // await console.log(container);
+  // }, []);
   
   return (
     <>
     <div style={{ position: 'relative', overflow: 'hidden' }}>
       <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
+        // id="tsparticles"
+        // init={particlesInit}
+        // loaded={particlesLoaded}
         options={{
           background: {
             color: {
@@ -113,7 +113,7 @@ const navigate = useNavigate();
       />
     <Navbar className="navbarCSS" collapseOnSelect expand="lg" style={{position: 'relative', zIndex: "2 !important"}}>
       {/* <Navbar className="navbarCSS" collapseOnSelect expand="lg" bg="dark" variant="dark"> */}
-        <Navbar.Brand href="/" className="text-white navTitle">Expense Management System</Navbar.Brand>
+        <Navbar.Brand href="/" className="text-white navTitle">PettyCash Manager</Navbar.Brand>
         <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{

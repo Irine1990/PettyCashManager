@@ -290,11 +290,19 @@ const Login = () => {
                 <Button
                   type="submit"
                   className=" text-center mt-3 btnStyle"
+                  onClick={handleSubmit}
+
+                >
+                  Login
+                </Button>
+                {/* <Button
+                  type="submit"
+                  className=" text-center mt-3 btnStyle"
                   onClick={!loading ? handleSubmit : null}
                   disabled={loading}
                 >
                   {loading ? "Signin…" : "Login"}
-                </Button>
+                </Button> */}
 
                 <p className="mt-3" style={{ color: "#9d9494" }}>
                   Don't Have an Account?{" "}
