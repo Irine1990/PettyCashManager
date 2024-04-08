@@ -1,5 +1,5 @@
 // SignupPage.js
-import { useCallback, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import "./auth.css";
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
@@ -12,6 +12,8 @@ import axios from "axios";
 const Register = () => {
 
   const [loading, setLoading] = useState(false);
+  console.log(loading)
+  
   const navigate = useNavigate();
 
   useEffect(() => {

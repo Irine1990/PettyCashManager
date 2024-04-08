@@ -18,6 +18,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
+  console.log(loading)
 
   useEffect(() => {
     if (localStorage.getItem("user")) {
