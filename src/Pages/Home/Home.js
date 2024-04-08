@@ -138,7 +138,7 @@ const Home = () => {
   };
 
 
-  
+
 
 
   useEffect(() => {
@@ -155,9 +155,9 @@ const Home = () => {
           type: type,
         });
         console.log(data);
-  
+
         setTransactions(data.transactions);
-  
+
         setLoading(false);
       } catch (err) {
         // toast.error("Error please Try again...", toastOptions);
@@ -166,7 +166,7 @@ const Home = () => {
     };
 
     fetchAllTransactions();
-  }, [refresh, frequency, endDate, type, startDate]);
+  }, [refresh, frequency, endDate, type, startDate, cUser._id]);
 
   const handleTableClick = (e) => {
     setView("table");
@@ -226,16 +226,14 @@ const Home = () => {
                 <FormatListBulletedIcon
                   sx={{ cursor: "pointer" }}
                   onClick={handleTableClick}
-                  className={`${
-                    view === "table" ? "iconActive" : "iconDeactive"
-                  }`}
+                  className={`${view === "table" ? "iconActive" : "iconDeactive"
+                    }`}
                 />
                 <BarChartIcon
                   sx={{ cursor: "pointer" }}
                   onClick={handleChartClick}
-                  className={`${
-                    view === "chart" ? "iconActive" : "iconDeactive"
-                  }`}
+                  className={`${view === "chart" ? "iconActive" : "iconDeactive"
+                    }`}
                 />
               </div>
 
